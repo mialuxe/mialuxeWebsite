@@ -1,0 +1,116 @@
+<!-- Header -->
+<header class=" fixed md:relative top-0 z-50 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm">
+
+  <div class="max-w-container-max mx-auto flex justify-between items-center px-8 py-4">
+
+    <!-- Logo -->
+    <div class="flex items-center">
+      <span class="font-display-lg text-display-lg tracking-tighter text-primary">
+        <a href="index.html">
+          MiaLuxe
+        </a>
+       
+      </span>
+    </div>
+
+  
+
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8" aria-label="Main Navigation">
+      <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors font-label-md">Home</a>
+      <a href="services.html" class="text-on-surface-variant hover:text-primary transition-colors font-label-md">Services</a>
+      <a href="index.html#portfolio" class="text-on-surface-variant hover:text-primary transition-colors font-label-md">Portfolio</a>
+      <a href="about.html" class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md">About</a>
+      <a href="contact.html" class="text-on-surface-variant hover:text-primary transition-colors font-label-md">Contact</a>
+    </nav>
+
+    <!-- Right Side -->
+    <div class="flex items-center gap-4">
+
+      <a href="#cta"
+        class="hidden md:block bg-primary-container text-on-primary-container px-10 py-4 rounded-full shadow-md hover:opacity-90 active:scale-95 transition-all font-label-md">
+        Contact Us
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="hamburger-menu-btn"
+        class="md:hidden text-charcoal-900 focus:outline-none"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false">
+
+        <span class="material-symbols-outlined text-3xl">
+          menu
+        </span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- Mobile Navigation -->
+<div id="mobile-nav-drawer"
+  class="fixed inset-0 z-[100] bg-charcoal-900/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+  aria-hidden="true"
+  inert>
+
+  <div id="mobile-drawer-content"
+    class="absolute top-0 right-0 h-full w-80 bg-background shadow-2xl p-8 flex flex-col justify-between translate-x-full transition-transform duration-300 ease-in-out">
+
+    <div>
+
+      <div class="flex justify-between items-center mb-12">
+
+        <span class="font-headline-sm text-2xl font-semibold text-primary">
+          MiaLuxe
+        </span>
+
+        <button id="close-drawer-btn"
+          class="text-charcoal-900 focus:outline-none"
+          aria-label="Close Menu">
+
+          <span class="material-symbols-outlined text-3xl">
+            close
+          </span>
+
+        </button>
+
+      </div>
+
+      <nav class="flex flex-col space-y-6">
+
+        <a href="index.html" class="mobile-menu-link text-primary font-semibold uppercase">
+          Home
+        </a>
+
+        <a href="services.html" class="mobile-menu-link text-on-surface-variant uppercase hover:text-primary">
+          Services
+        </a>
+
+        <a href="index.html#portfolio" class="mobile-menu-link text-on-surface-variant uppercase hover:text-primary">
+          Portfolio
+        </a>
+
+        <a href="about.html" class="mobile-menu-link text-on-surface-variant uppercase hover:text-primary">
+          About
+        </a>
+
+        <a href="index.html#why-choose-us" class="mobile-menu-link text-on-surface-variant uppercase hover:text-primary">
+          Promise
+        </a>
+
+      </nav>
+
+    </div>
+
+    <a href="#cta"
+      class="mobile-menu-link w-full bg-primary text-white py-4 rounded-full text-center uppercase tracking-widest font-semibold shadow-lg">
+      Book Appointment
+    </a>
+
+  </div>
+
+</div>

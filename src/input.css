@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Setting overflow-x: hidden on BOTH html and body together is a well-known
+     iOS Safari fix. Without this, overflow-x-hidden on body alone can silently
+     block touch scroll (overflow-y) on iPhones. */
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth
+  }
+  body {
+    @apply bg-background text-on-background font-body-md overflow-x-hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Ensure vertical scrolling is always allowed */
+    overflow-y: auto;
+    /* Enable smooth momentum-based scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(74, 55, 40, 0.05);
+}
+
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: rotate(45deg);
+  transition: 0.5s;
+  display: block;
+}
+
+.shimmer-btn:hover::after {
+  left: 120%;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #fff8f5 0%, #ffeadc 100%);
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #d4af37, #ffe088, #d4af37);
+  background-size: 200% auto;
+  transition: 0.5s;
+}
+
+.gold-shimmer:hover {
+  background-position: right center;
+}
+
+.masonry {
+  column-count: 1;
+}
+
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.pause:hover {
+  animation-play-state: paused;
+}
