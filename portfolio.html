@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>MiaLuxe | Our Makeup Services</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(74, 55, 40, 0.05);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #fff8f5 0%, #ffeadc 100%);
+        }
+
+        .gold-shimmer {
+            background: linear-gradient(90deg, #d4af37, #ffe088, #d4af37);
+            background-size: 200% auto;
+            transition: 0.5s;
+        }
+
+        .gold-shimmer:hover {
+            background-position: right center;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+    <!-- TopNavBar -->
+    <!-- header -->
+    <div id="header" class="relative z-50"></div>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero-gradient relative py-24 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+
+            </div>
+            <div class="container mx-auto px-margin-mobile md:px-gutter relative z-10 text-center">
+                <h1 class="font-display-lg text-display-lg md:text-display-lg mb-4 text-primary reveal">Our Portfolio
+                </h1>
+                <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto reveal"
+                    style="transition-delay: 100ms;">
+                    Every bride has a unique story. Explore our collection of bridal transformations, elegant
+                    hairstyles, and flawless makeup looks created with precision, luxury, and attention to every detail.
+                </p>
+                <div class="mt-12 flex justify-center reveal" style="transition-delay: 200ms;">
+                    <div class="w-px h-24 bg-gradient-to-b from-primary to-transparent opacity-30"></div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio grid  -->
+
+        <section class="py-section-padding bg-surface">
+            <div class="container mx-auto px-margin-mobile md:px-gutter">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Service Card 1 -->
+                    <div class="glass-card rounded-xl overflow-hidden group reveal">
+                        <!-- Using h-80 for mobile, md:h-[400px] for desktop -->
+                        <div class="relative h-80 md:h-[400px] overflow-hidden">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('assets/images/portfolio\ 1.jpeg')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Bridal Makeup</h3>
+                            <p class="text-on-surface-variant font-body-md mb-6"></p>
+                            <div class="flex items-center justify-between">
+                                <a href="https://www.instagram.com/mia_luxe_bridalstudio?igsh=MWJ1MnUzeGZoZm05cA==">
+
+                                    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                            <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </a>
+                                <button
+                                    class="border border-primary-container text-primary px-5 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary-container hover:text-white transition-all">
+                                    <a href="https://wa.me/918589054763...">Chat on WhatsApp</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                  <div class="glass-card rounded-xl overflow-hidden group reveal">
+                        <!-- Using h-80 for mobile, md:h-[400px] for desktop -->
+                        <div class="relative h-80 md:h-[400px] overflow-hidden">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('assets/images/portfolio\ 2.jpg')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Bridal Makeup</h3>
+                            <p class="text-on-surface-variant font-body-md mb-6"></p>
+                            <div class="flex items-center justify-between">
+                                <a href="https://www.instagram.com/mia_luxe_bridalstudio?igsh=MWJ1MnUzeGZoZm05cA==">
+
+                                    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                            <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </a>
+                                <button
+                                    class="border border-primary-container text-primary px-5 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary-container hover:text-white transition-all">
+                                    <a href="https://wa.me/918589054763...">Chat on WhatsApp</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Service Card 3 -->
+                      <div class="glass-card rounded-xl overflow-hidden group reveal">
+                        <!-- Using h-80 for mobile, md:h-[400px] for desktop -->
+                        <div class="relative h-80 md:h-[400px] overflow-hidden">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('assets/images/portCouple.png')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Bridal Makeup</h3>
+                            <p class="text-on-surface-variant font-body-md mb-6"></p>
+                            <div class="flex items-center justify-between">
+                              <a href="https://www.instagram.com/mia_luxe_bridalstudio?igsh=MWJ1MnUzeGZoZm05cA==">
+
+                                    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                            <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </a>
+                                <button
+                                    class="border border-primary-container text-primary px-5 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary-container hover:text-white transition-all">
+                                    <a href="https://wa.me/918589054763...">Chat on WhatsApp</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Service Card 4 -->
+                     <div class="glass-card rounded-xl overflow-hidden group reveal">
+                        <!-- Using h-80 for mobile, md:h-[400px] for desktop -->
+                        <div class="relative h-80 md:h-[400px] overflow-hidden">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('assets/images/portCouple2.jpg')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Bridal Makeup</h3>
+                            <p class="text-on-surface-variant font-body-md mb-6"></p>
+                            <div class="flex items-center justify-between">
+                                 <a href="https://www.instagram.com/mia_luxe_bridalstudio?igsh=MWJ1MnUzeGZoZm05cA==">
+
+                                    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                            <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </a>
+                                <button
+                                    class="border border-primary-container text-primary px-5 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary-container hover:text-white transition-all">
+                                    <a href="https://wa.me/918589054763...">Chat on WhatsApp</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                     <div class="glass-card rounded-xl overflow-hidden group reveal">
+                        <!-- Using h-80 for mobile, md:h-[400px] for desktop -->
+                        <div class="relative h-80 md:h-[400px] overflow-hidden">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('assets/images/portBride.png')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Bridal Makeup</h3>
+                            <p class="text-on-surface-variant font-body-md mb-6"></p>
+                            <div class="flex items-center justify-between">
+                                  <a href="https://www.instagram.com/mia_luxe_bridalstudio?igsh=MWJ1MnUzeGZoZm05cA==">
+
+                                    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                            <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </a>
+                                <button
+                                    class="border border-primary-container text-primary px-5 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary-container hover:text-white transition-all">
+                                    <a href="https://wa.me/918589054763...">Chat on WhatsApp</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Service Card 6 -->
+                     <div class="glass-card rounded-xl overflow-hidden group reveal">
+                        <!-- Using h-80 for mobile, md:h-[400px] for desktop -->
+                        <div class="relative h-80 md:h-[400px] overflow-hidden">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('assets/images/BridalMakeup.jpeg')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Bridal Makeup</h3>
+                            <p class="text-on-surface-variant font-body-md mb-6"></p>
+                            <div class="flex items-center justify-between">
+                                <a href="https://www.instagram.com/mia_luxe_bridalstudio?igsh=MWJ1MnUzeGZoZm05cA==">
+
+                                    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                            <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                        </svg>
+                                    </a>
+                                </span>
+                                <button
+                                    class="border border-primary-container text-primary px-5 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary-container hover:text-white transition-all">
+                                    <a href="https://wa.me/918589054763...">Chat on WhatsApp</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- updated verison  -->
+
+
+
+
+
+        <!-- Customer Trust Section -->
+
+        <!-- Final CTA -->
+        <section class="py-24 text-center bg-surface">
+            <div class="container mx-auto px-margin-mobile md:px-gutter max-w-3xl">
+                <h2 class="font-display-lg text-display-lg text-primary mb-6 reveal">Let's Create Your Dream Look</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 reveal"
+                    style="transition-delay: 100ms;">
+                    Spaces are limited for our premium sessions. Secure your booking today for an unforgettable beauty
+                    experience.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center items-center reveal"
+                    style="transition-delay: 200ms;">
+                    <button
+                        class="gold-shimmer text-on-primary-container px-10 py-4 rounded-full font-label-md text-label-md shadow-xl hover:scale-105 active:scale-95 transition-all w-full md:w-auto">
+                        <a href="contact.html">Book your session</a>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script src="include.js"></script>
+    <script>
+        // Simple Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Hover effect for service cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+
+</html>
